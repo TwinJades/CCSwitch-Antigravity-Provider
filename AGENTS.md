@@ -5,7 +5,7 @@
 1. 先读 [PROJECT_SPEC.md](PROJECT_SPEC.md) 的当前阶段和边界。
 2. 再读 [开发阶段](docs/development-phases.md)。
 3. 不读取、打印、提交或索要真实凭据。
-4. 不整体迁移旧 Gateway，不实现 Cline 或自定义 Provider 聚合。
+4. 复用已迁入且验证过的实现；后续删除 Cline、自定义 Provider 聚合等旧范围时必须保留回归保护。
 5. 未经授权不构建 Release、不推送未验收功能。
 6. 删除文件必须移入 Windows 回收站。
 7. 保留用户和其他 Agent 的修改。

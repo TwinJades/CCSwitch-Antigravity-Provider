@@ -2,7 +2,7 @@
 
 把用户已授权的 Antigravity 能力作为本地 Provider 交给 [CC Switch](https://github.com/farion1231/cc-switch) 管理。
 
-> 当前状态：仓库初始化完成，功能尚未实现，暂无可下载 Release。请勿把当前内容当作可用产品。
+> 当前状态：旧 Gateway 的已验证前后端、Sidecar 管理、测试和打包基线已经迁入；CC Switch 专用裁剪与集成尚未完成，暂无本项目 Release。
 
 ## 定位
 

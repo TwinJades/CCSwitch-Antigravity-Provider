@@ -1,19 +1,43 @@
+# Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.venv/
-dist/
-build/
 *.egg-info/
-runtime/
-data/
-config/
-.env
-.env.*
-*.db
-*.sqlite*
-*.log
-.vscode/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+
+# Editors and operating system
 .idea/
+.vscode/
 .DS_Store
 Thumbs.db
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+auths/
+secrets/
+credential/
+credentials/
+*credentials*.json
+client_secret*.json
+oauth*.json
+*.key
+*.pem
+config/*.toml
+config/*.yaml
+config/*.yml
+!config/*.example.toml
+!config/*.example.yaml
+
+# Local state and downloaded runtimes
+data/
+logs/
+runtime/
+*.db
+*.sqlite
+*.sqlite3
+build/
+dist/

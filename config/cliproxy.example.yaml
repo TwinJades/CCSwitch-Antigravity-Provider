@@ -1,0 +1,28 @@
+# Copy this file into the Git-ignored runtime directory before local use.
+# Replace placeholders locally; never commit the resulting file.
+host: "127.0.0.1"
+port: 8317
+
+remote-management:
+  allow-remote: false
+  secret-key: "<local-management-key>"
+  disable-control-panel: true
+
+auth-dir: "./auths"
+api-keys:
+  - "<local-internal-sidecar-api-key>"
+
+debug: false
+logging-to-file: false
+usage-statistics-enabled: false
+
+# MVP does not implement multi-account routing or automatic failover.
+request-retry: 0
+max-retry-credentials: 1
+quota-exceeded:
+  switch-project: false
+  switch-preview-model: false
+  antigravity-credits: false
+routing:
+  strategy: "fill-first"
+  session-affinity: false

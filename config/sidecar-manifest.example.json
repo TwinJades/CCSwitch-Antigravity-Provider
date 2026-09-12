@@ -1,0 +1,9 @@
+{
+  "name": "CLIProxyAPI",
+  "version": "REQUIRED_FIXED_VERSION",
+  "commit": "REQUIRED_UPSTREAM_COMMIT",
+  "sha256": "REQUIRED_TRUSTED_64_HEX_SHA256",
+  "download_source": "https://github.com/router-for-me/CLIProxyAPI/releases/tag/REQUIRED_FIXED_VERSION",
+  "installed_at": "REQUIRED_UTC_ISO_8601",
+  "tested": false
+}

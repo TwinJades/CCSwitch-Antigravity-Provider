@@ -8,23 +8,23 @@
 
 ## 当前阶段
 
-`Phase 0 — 仓库初始化完成；CC Switch 集成契约与最小 PoC 尚待完成。`
+`Phase 0 — 现有实现迁移完成；CC Switch 集成契约与最小 PoC 尚待完成。`
 
 当前没有可用发行包，也不继承旧 Gateway 的发布状态。阶段详情见 [开发阶段](docs/development-phases.md)。
 
 ## 当前允许事项
 
 1. 验证 CC Switch 的 Provider 配置、模型发现和请求转发契约。
-2. 从旧 Gateway 提取 Antigravity、CLIProxyAPI、OAuth、代理和安全边界的最小可复用实现。
+2. 以已经迁入的 Gateway 前后端、CLIProxyAPI、OAuth、代理和安全实现为基线，在测试保护下裁剪为 Antigravity Bridge。
 3. 建立针对性测试与本机 PoC。
 
 ## 当前禁止事项
 
-1. 整体复制旧 Gateway 或继续构建通用 Provider Gateway。
+1. 从头重写已经验证的前后端与 Sidecar 管理能力，或在没有回归测试保护时破坏迁移基线。
 2. 实现 Cline、学校 API或其他自定义 Provider 聚合。
 3. 捆绑代理软件、节点或订阅，扫描端口，读取或执行 `Antigravity.cmd`。
 4. 支持含用户名或密码的代理。
-5. 未经验收就创建 Release 或宣称可用。
+5. 把迁入但计划移除的旧功能冒充为新项目范围，或未经验收就创建 Release、宣称可用。
 6. 修改、替换或冒用旧项目 Release 和验收结论。
 
 ## 架构与边界
